@@ -1,0 +1,36 @@
+{
+  "name": "grunt-new",
+  "version": "0.0.0",
+  "description": "Minimal generator. Adds files to existing projects with your choice of templates.",
+  "main": "Gruntfile.coffee",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hurrymaplelad/grunt-new.git"
+  },
+  "keywords": [
+    "grunt",
+    "generator",
+    "template"
+  ],
+  "author": "Adam Hull <adam@hmlad.com>",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-simple-mocha": "~0.4.0",
+    "matchdep": "~0.1.2",
+    "expect.js": "git://github.com/LearnBoost/expect.js.git#master",
+    "consolidate": "~0.9.1",
+    "handlebars": "~1.0.12",
+    "normalize-package-data": "~0.2.2"
+  },
+  "peerDependencies": {
+    "grunt": ">=0.4.1"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6.3"
+  }
+}
