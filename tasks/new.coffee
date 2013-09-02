@@ -30,4 +30,5 @@ module.exports = (grunt) ->
       return done(err) if err
       engine template, data, (err, rendered) ->
         grunt.file.write data.dest, rendered
+        grunt.log.oklns "Wrote #{data.dest}"
         done(err)
