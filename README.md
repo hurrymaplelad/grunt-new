@@ -42,6 +42,7 @@ Or something fancy like
 ```coffee
 pkg = require './package.json'
 require('normalize-package-data')(pkg)
+inquirer = require 'inquirer'
 
 grunt.loadNpmTasks 'grunt-new'
 
@@ -53,13 +54,10 @@ grunt.initConfig
       template: 'templates/post.hbs',
       data: (done) ->
         # prompt the user for the title of the new post
-        inquirer.prompt [{
-          name: 'title'
-          message: 'Title?'
-        }], (err, {title}={}) ->
+        inquirer.prompt [name: 'title', message: 'Title?'], ({title}) ->
           # timestamp the new post filename
           date = grunt.template.today 'yyyy-mm-dd'
-          slug = grunt.utils._.dasherize title.toLowerCase()
+          slug = grunt.util._.dasherize title.toLowerCase()
           done null,
             title: title
             author: pkg.author.name # grab the author name from package.json
