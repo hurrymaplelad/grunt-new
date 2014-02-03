@@ -1,7 +1,7 @@
 grunt-new [![Build Status](https://travis-ci.org/hurrymaplelad/grunt-new.png)](https://travis-ci.org/hurrymaplelad/grunt-new)
 =========
 
-Minimal generator. Add files to existing projects. Mix and match template engines.  Anything supporting the [Consolidate.js](https://github.com/visionmedia/consolidate.js/) signaute will do.
+Minimal generator. Add files to existing projects. Mix and match template engines.  Anything supporting the [Consolidate.js](https://github.com/visionmedia/consolidate.js/) signature will do.
 
 ```shell
 npm install --save-dev grunt-new
