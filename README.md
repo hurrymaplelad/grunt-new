@@ -69,7 +69,7 @@ grunt.initConfig
 
 #### engine
 Type: `Function`
-Default value: `_.template`
+Default value: [`_.template`](http://lodash.com/docs#template)
 
 A function that implements the [Consolidate.js signature](https://github.com/visionmedia/consolidate.js/#api): `function(path, data, callback)` and
 calls its callback with `(err, string)`.
